@@ -1,3 +1,5 @@
+#kth smallest element
+
 n = int(input("Enter the length of the list: "))
 lst = [int(input()) for _ in range(n)]
 k = int(input("Enter the k value for the kth smallest integer: "))

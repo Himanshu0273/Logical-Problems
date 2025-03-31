@@ -1,3 +1,5 @@
+#Find the majority Element in a list
+
 def max_freq(lst):
     d=dict()
     # maxi=0, me=lst[0]
