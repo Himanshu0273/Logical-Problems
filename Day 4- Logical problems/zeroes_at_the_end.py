@@ -1,3 +1,6 @@
+#All Zeroes at the end
+
+
 # def func(lst):
 #     lst1=[]
 #     cnt=0
