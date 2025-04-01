@@ -59,7 +59,7 @@ print(clone)
 #------------------------#
 
 #Question 5: Remove repeating elements
-t=(1,2,3,54,2,5,3,3,6,8,5)
+t=(1,2,3,5,2,5,3,3,6,8,5)
 
 #M1: converting to set and then to tuple: Does not preserve order
 st=tuple(set(t))

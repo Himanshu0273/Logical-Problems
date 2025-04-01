@@ -1,14 +1,14 @@
 #Reverse only the vowels in a string
 def rev_vowels(s):
     s=s.lower()
-    vow=[x for x in s if x in "aeiou"]
+    vow=[ch for ch in s if ch in "aeiou"]
     res=""
-    for i in s:
-        if i in "aeiou":
-            res+=vow[len(vow)-1]
-            vow.pop()
+    for i in range(len(s)):
+        if s[i] in "aeiou":
+            res+=vow[len(vow)-i]
+            # vow.pop()
         else:
-            res+=i
+            res+=s[i]
     return res
 
 s = input("Enter the string: ")

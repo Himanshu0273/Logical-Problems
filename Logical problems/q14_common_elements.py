@@ -8,7 +8,6 @@ def common_list(lst1, lst2):
         if i in l2:
             lst.append(i)
             lst2.remove(i)
-            
     return lst
     
 

@@ -38,13 +38,6 @@ print("New: ",st)
 st = {1,2,3,4,5}
 print("Old: ",st)
 
-st.add(10)
-print("New: ",st)
-
-s1 = {"a",'b','b'}
-st.update(s1)
-print("New: ",st)
-
 #remove()
 st.remove(5)
 print("Remove: ", st)

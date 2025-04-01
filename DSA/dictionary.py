@@ -56,7 +56,7 @@ print(d)
 
 dict1 = {
     'a': 1, 
-    'b':2, 
+    'b': 2, 
     'c': 3
 }
 
@@ -189,7 +189,7 @@ print(dic)
 
 #Question 12:
 
-dict1 = {
+dic = {
     'a': 1,
     'b': 2,
     'c': 3,

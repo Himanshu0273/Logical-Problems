@@ -14,8 +14,8 @@ for _ in range(5):
 for i in a:
     print(i, end=" ")
     
-#Method 2
 print()
+#Method 2
 for i in range(len(a)):
     print(a[i], end=" ")
     

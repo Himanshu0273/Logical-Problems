@@ -57,7 +57,7 @@ print(unique)
 
 #Q7: Clone or copy a list
 
-a=[1,2,'a',4]
+a=[1,2,'a',4.5]
 
 #using copy:
 b=a.copy()
