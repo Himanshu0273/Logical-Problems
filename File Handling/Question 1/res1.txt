@@ -1,0 +1,10 @@
+The:2
+cat:2
+sat:1
+on:1
+the:3
+mat:3
+was:1
+soft:1
+and:1
+liked:1
