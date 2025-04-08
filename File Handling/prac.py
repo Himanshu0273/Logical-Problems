@@ -1,36 +1,18 @@
-import json
+# from functools import reduce
 
-data={
-    "Name": "Alice",
-    "Age": 25,
-    "City": "NYC",
-    "Skills": ["C++", "Python", "SQL"]
-}
+# nums=[1,2,3,4,5,6,7,8]
+# squared = list(map(lambda x: x**2, nums))
+# print(squared)
+
+# # evens = list(x for x in nums if x%2==0)
+# evens = list(filter(lambda x: x%2==0, nums))
+# print (evens)
+
+# sum = reduce(lambda x,y: x/y, nums)
+# print(sum)
 
 
-with open ("File Handling\data.json", "w") as file:
-    json.dump(data, file, indent=4)
-    
-
-with open("File Handling\data.json") as file:
-    data = json.load(file)
-    print(data)
-    
-    
-data["Country"] = "USA"
-
-with open ("File Handling\data.json", "w") as file:
-    json.dump(data, file, indent=4)
-    
-    
-    
-json_str = '{"Name":"Bob", "Age":30, "City": "LA"}'
-data = json.loads(json_str)
-print(data["Name"])
-
-# import os
-
-# if os.path.exists("File Handling\data.json"):
-#     os.remove("File Handling\data.json")
-# else:
-#     print("Enter VALid filename")
+from collections import Counter
+lst = ['apple', 'banana', 'apple', 'banana', 'banana', 'orange']
+dic = dict(Counter(lst))
+print(dic)
