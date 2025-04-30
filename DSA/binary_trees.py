@@ -81,6 +81,39 @@ def pre_order(node):
             
     return lst
 
+def in_order(root):
+    stack = []
+    curr = root
+    res=[]
+    while curr or stack:
+        while curr:
+            stack.append(curr)
+            curr=curr.left
+        curr = stack.pop()
+        res.append(curr.val)
+        curr = curr.right
+    return res
+
+def post_order(root):
+    if not root:
+        return 
+    
+    stk1 = [root]
+    stk2 = []
+    while stk1:
+        node = stk1.pop()
+        stk2.append(node.val)
+        if node.left:
+            stk1.append(node.left)
+        if node.right:
+            stk1.append(node.right)
+
+    res=[]
+    while stk2:
+        res.append(stk2.pop())
+    
+    return res
+
 #BFS
 from collections import deque
 def level_order(node):
@@ -98,5 +131,7 @@ def level_order(node):
             
     return lst
 
-print("Iterative Preorder: ", pre_order(A))
-print("Iterative Level Order: ", level_order(A))
+print("Iterative Preorder:  ", pre_order(A))
+print("Iterative Inorder:   ", in_order(A))
+print("Iterative Postorder: ", post_order(A))
+print("Iterative LevelOrder:", level_order(A))
