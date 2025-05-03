@@ -1,4 +1,4 @@
-#Change the values from yes/no to True/False
+#Iterate over rows
 
 import pandas as pd
 import numpy as np
@@ -13,5 +13,11 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 df = pd.DataFrame(exam_data, index=labels)
 
-df['qualify'] = df['qualify'].map({'yes': True, 'no': False})
-print(df)
+c=1
+#To iterate over a specific row
+print(df.values[0])
+
+#To iterate over all the rows one by one
+for ser in df.values:
+    print(c, " : ", ser)
+    c+=1

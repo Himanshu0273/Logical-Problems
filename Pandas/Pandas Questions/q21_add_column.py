@@ -1,4 +1,4 @@
-#Change the values from yes/no to True/False
+#Add a new column to the existing df
 
 import pandas as pd
 import numpy as np
@@ -13,5 +13,7 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 df = pd.DataFrame(exam_data, index=labels)
 
-df['qualify'] = df['qualify'].map({'yes': True, 'no': False})
+col = [1,2,3,4,5,6,7,8,9,10]
+# df['rank'] = col
+df = df.assign(rank=col)
 print(df)

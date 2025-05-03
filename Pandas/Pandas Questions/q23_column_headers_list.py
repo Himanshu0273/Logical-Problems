@@ -1,4 +1,4 @@
-#Change the values from yes/no to True/False
+#Get list of column headers
 
 import pandas as pd
 import numpy as np
@@ -13,5 +13,8 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 df = pd.DataFrame(exam_data, index=labels)
 
-df['qualify'] = df['qualify'].map({'yes': True, 'no': False})
-print(df)
+res=[]
+for i in df:
+    res.append(i)
+    
+print(res)
